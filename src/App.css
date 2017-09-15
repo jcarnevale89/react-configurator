@@ -1,0 +1,10 @@
+.view {
+  position: relative;
+  display: block;
+  height: 230px;
+}
+
+.view img {
+  position: absolute;
+  width: 400px;
+}

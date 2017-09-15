@@ -1,0 +1,38 @@
+[
+  {
+    "code": "CLASSIC",
+    "name": "Classic",
+    "type": "tonneauCover",
+    "selected": true
+  },
+  {
+    "code": "SE",
+    "name": "SE",
+    "type": "tonneauCover",
+    "selected": false
+  },
+  {
+    "code": "LUX",
+    "name": "LUX",
+    "type": "tonneauCover",
+    "selected": false
+  },
+  {
+    "code": "FLEX",
+    "name": "Flex",
+    "type": "tonneauCover",
+    "selected": false
+  },
+  {
+    "code": "ELITE",
+    "name": "Elite",
+    "type": "tonneauCover",
+    "selected": false
+  },
+  {
+    "code": "ELITE_LX",
+    "name": "Elite LX",
+    "type": "tonneauCover",
+    "selected": false
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "code": "PAR",
+    "name": "Maximum Steel",
+    "swatch": "#5B6370",
+    "selected": true
+  },
+  {
+    "code": "PAU",
+    "name": "Granite Chrystal",
+    "swatch": "#474747",
+    "selected": false
+  },
+  {
+    "code": "PCL",
+    "name": "Blue Streak",
+    "swatch": "#2C4B70",
+    "selected": false
+  },
+  {
+    "code": "PDM",
+    "name": "Mineral Grey",
+    "swatch": "#6F7474",
+    "selected": false
+  },
+  {
+    "code": "PR4",
+    "name": "Flame Red",
+    "swatch": "#802F31",
+    "selected": false
+  },
+  {
+    "code": "PW7",
+    "name": "Bright White",
+    "swatch": "#F1F2EB",
+    "selected": false
+  },
+  {
+    "code": "PX8",
+    "name": "Black",
+    "swatch": "#313131",
+    "selected": false
+  },
+  {
+    "code": "PBU",
+    "name": "True Blue",
+    "swatch": "#00315A",
+    "selected": false
+  },
+  {
+    "code": "PRP",
+    "name": "Deep Cherry",
+    "swatch": "#75282E",
+    "selected": false
+  },
+  {
+    "code": "PS2",
+    "name": "Bright Silver",
+    "swatch": "#808284",
+    "selected": false
+  },
+  {
+    "code": "PXR",
+    "name": "Brilliant Black",
+    "swatch": "#313131",
+    "selected": false
+  }
+]
