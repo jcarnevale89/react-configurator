@@ -3,6 +3,7 @@ import './App.css'
 import colors from './data/colors.json'
 import parts from './data/parts.json'
 import View from './components/View'
+import Swatch from './components/Swatch'
 
 class App extends Component {
 
@@ -10,6 +11,7 @@ class App extends Component {
     super()
 
     this.getColor = this.getColor.bind(this)
+    this.setColor = this.setColor.bind(this)
     this.getParts = this.getParts.bind(this)
 
     this.state = {
@@ -27,6 +29,16 @@ class App extends Component {
 
   getColor() {
     return this.state.colors.filter(color => color.selected === true)[0].code
+  }
+
+  setColor(newColor) {
+    // console.log(`The color selected is ${newColor}`)
+    const colors = this.state.colors.map((color) => {
+      color.code === newColor ? color.selected = true : color.selected = false
+      return color
+    })
+    // console.log(colors)
+    this.setState({ colors })
   }
 
   getParts() {
@@ -49,6 +61,20 @@ class App extends Component {
             )
           })
         }
+        <div className="colorNav">
+        {
+          this.state.colors.map((color) => {
+            return (
+              <Swatch
+                key={color.code}
+                code={color.code}
+                name={color.name}
+                setColor={this.setColor}
+              />
+            )
+          })
+        }
+        </div>
       </div>
     );
   }

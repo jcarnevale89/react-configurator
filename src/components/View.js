@@ -4,7 +4,7 @@ import Part from './Part'
 const View = (props) => {
 
   return (
-    <div className={`view view-${props.name}`}>
+    <div className={`view view-${props.view}`}>
       <img src={`images/${props.truckId}/${props.truckId}-${props.view}.jpg`} alt={`${props.truckId}-${props.view}`}/>
       <img src={`images/${props.truckId}/${props.truckId}-${props.color}-${props.view}.png`} alt={`${props.truckId}-${props.view}`}/>
       {
