@@ -10,7 +10,6 @@ class App extends Component {
   constructor() {
     super()
 
-    this.getColor = this.getColor.bind(this)
     this.setColor = this.setColor.bind(this)
     this.getParts = this.getParts.bind(this)
 
@@ -23,22 +22,18 @@ class App extends Component {
       ],
       colors: colors,
       parts: parts,
+      currentColors: [colors[0].code]
     }
 
   }
 
-  getColor() {
-    return this.state.colors.filter(color => color.selected === true)[0].code
-  }
-
   setColor(newColor) {
-    // console.log(`The color selected is ${newColor}`)
-    const colors = this.state.colors.map((color) => {
-      color.code === newColor ? color.selected = true : color.selected = false
-      return color
-    })
-    // console.log(colors)
-    this.setState({ colors })
+    const currentColors = [...this.state.currentColors]
+    currentColors.push(newColor)
+    if (currentColors.length > 2) {
+      currentColors.shift()
+    }
+    this.setState({ currentColors })
   }
 
   getParts() {
@@ -55,7 +50,7 @@ class App extends Component {
                 key={view}
                 view={view}
                 truckId={this.state.truckId}
-                color={this.getColor()}
+                currentColors={this.state.currentColors}
                 parts={this.getParts()}
               />
             )
